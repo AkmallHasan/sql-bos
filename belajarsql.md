@@ -36,11 +36,11 @@ Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data
 
 ```sql
 -- ini perintah untuk membuat basis data
-CREATE DATABASE teachers;
+CREATE DATABASE teachers; ```
 
 ```sql
 -- ini perintah untuk mmenghapus basis data
-DROP DATABASE teachers;
+DROP DATABASE teachers;```
 
 
 SELECT = Perintah ini digunakan untuk mengambil data dalam basis data. Perintah ini umumnnya akan menyebutkan nama kolom yang 
