@@ -31,6 +31,8 @@ Kekurangan
 ## 2. Basic SQL Syntax
 SQL memiliki banyak perintah yang digunakan untuk berinteraksi dengan basis data yang digunakan, antara lain :
 
+### 1. SQL Keywords
+
 **1. Membuat dan Menghapus Basis Data**
 
 Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data nya terlebih dahulu. Untuk pembuatan basis data gunakan perintah CREATE beserta nama basis datanya dan jika ingin menghapus gunakan perintah DROP beserta nama basis datanya. Berikut perintah yang umum digunakan ketika menjalankan database pertama kali,
@@ -75,7 +77,24 @@ Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data 
 
 </div>
 
+### 2. Tipe Data
+Tipe Data dalam SQL ada banyak sekali, berikut adalah tipe data yang umum digunakan, antara lain:
 
+1. Tipe Data Character
+
+2. Tipe Data Numeric
+
+3. Tipe Data Datetime
+
+4. Tipe Data Boolean
+
+5. Tipe Data ENUM
+
+
+### 3. Operators
+
+
+### 4. Statements
 
 
 
