@@ -32,16 +32,16 @@ Kekurangan
 SQL memiliki banyak perintah yang digunakan untuk berinteraksi dengan basis data yang digunakan, antara lain :
 
 1. Membuat dan Menghapus Basis Data
-Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data nya terlebih dahulu. Untuk pembuatan basis data gunakan perintah CREATE beserta nama basis datanya dan jika ingin menghapus gunakan perintah DROP beserta nama basis datanya.  
+Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data nya terlebih dahulu. Untuk pembuatan basis data gunakan perintah CREATE beserta nama basis datanya dan jika ingin menghapus gunakan perintah DROP beserta nama basis datanya. Berikut perintah yang umum digunakan ketika menjalankan database pertama kali,
 
-```sql
--- ini perintah untuk membuat basis data
-CREATE DATABASE teachers; ```
+| Command | Description |
+| --- | --- |
+| CREATE DATABASE `name_database` | Membuat basis data  |
+| DROP DATABASE `name_database` | Menghapus basis data |
 
-```sql
--- ini perintah untuk mmenghapus basis data
-DROP DATABASE teachers;```
 
+
+2. Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat terdiri dari satu atau beberapa RDBMS. Umumnya pembuatan tabel selalu disesuaikan dengan tujuan penggunaan aplikasi basis data tersebut. Untuk membuat tabel gunakan perintah CREATE TABLE dan DROP TABLE jika ingin menghapus. 
 
 SELECT = Perintah ini digunakan untuk mengambil data dalam basis data. Perintah ini umumnnya akan menyebutkan nama kolom yang 
 ingin diambil datanya  dan penggunaaan tanda * untuk mengambil seluruh data kolom dalam table. 
