@@ -34,12 +34,14 @@ SQL memiliki banyak perintah yang digunakan untuk berinteraksi dengan basis data
 1. Membuat dan Menghapus Basis Data
 Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data nya terlebih dahulu. Untuk pembuatan basis data gunakan perintah CREATE beserta nama basis datanya dan jika ingin menghapus gunakan perintah DROP beserta nama basis datanya. Berikut perintah yang umum digunakan ketika menjalankan database pertama kali,
 
+<div align="center">
+
 | Command | Description |
 | --- | --- |
 | CREATE DATABASE `name_database` | Membuat basis data  |
 | DROP DATABASE `name_database` | Menghapus basis data |
 
-
+</div>
 
 2. Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat terdiri dari satu atau beberapa RDBMS. Umumnya pembuatan tabel selalu disesuaikan dengan tujuan penggunaan aplikasi basis data tersebut. Untuk membuat tabel gunakan perintah CREATE TABLE dan DROP TABLE jika ingin menghapus. 
 
