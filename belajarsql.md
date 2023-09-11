@@ -53,65 +53,27 @@ Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat t
 | CREATE TABLE `name_table` (`name_columnX` `typedata_columnX` `defaultvalue_columnX`) | Membuat table  |
 | DROP TABLE `name_table` | Menghapus table |
 | DESCRIBE  `name_table` | Melihat Struktur table |
+| `name_columnX` `typedata_columnX` NOT NULL | Menghindari data NULL pada tiap kolom|
+| `name_columnX` `typedata_columnX` NOT NULL DEFAULT | Memasukan Nilai Otomatis |
 
 </div>
 
 **3. Memasukan Data ke dalam Tabel** 
-Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data ke dalam masing-masing kolom pada tabel. Perlu diketahui bahwa kita tidak dapat memasukan data tanpa membuat tabel terlebih dahulu. Untuk memasukan data gunakan perintah INSERT, apabila terjadi kesalahan maka tidak perlu menghapus tabel, cukup hapus data yang salah dengan menggunakan perintah DELETE. Jika kolom dalam suatu tabel tidak disebutkan saat pengisian data dalam tabel, maka kolom tersebut tidak akan terisi dan secara otomatis akan bernilai `NULL Values` kecuali pada kolom tersebut tersedia default value. 
-
-Apabila sewaktu-waktu terjadi penambahan data terhadap tabel yang pernah dibuat gunakan perintah UPDATE untuk menambahkan data baru tersebut. Berikut perintah-perintah yang digunakan dalam memanipulasi data,
+Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data ke dalam masing-masing kolom pada tabel. Perlu diketahui bahwa kita tidak dapat memasukan data tanpa membuat tabel terlebih dahulu. Untuk memasukan data gunakan perintah INSERT, apabila terjadi kesalahan maka tidak perlu menghapus tabel, cukup hapus data yang salah dengan menggunakan perintah DELETE. Jika kolom dalam suatu tabel tidak disebutkan saat pengisian data dalam tabel, maka kolom tersebut tidak akan terisi dan secara otomatis akan bernilai `NULL Values` kecuali pada kolom tersebut tersedia default value. Apabila sewaktu-waktu terjadi penambahan data terhadap tabel yang pernah dibuat gunakan perintah UPDATE untuk menambahkan data baru tersebut. Berikut perintah-perintah yang digunakan dalam memanipulasi data,
 
 <div align="center">
   
 | Command | Description |
 | --- | --- |
 | INSERT INTO `name_table` ( `name_column1`,`name_column2`, `name_column3`) VALUES (`ValuesColumn1`,`ValuesColumn2`,`ValuesColumn3`)| Memasukan data |
+| DELETE FROM `name_table` WHERE `spesific row with operation` | Menghapus data |
+| UPDATE `name_table` SET `spesific column with operation` WHERE `spesific row with operation`| Menambahkan data |
+
 
 </div>
 
-| DROP TABLE `name_table` | Menghapus table |
-| DESCRIBE  `name_table` | Melihat Struktur table |
-| ALTER TABLE  `name_table` ADD COLUMN `name_column` | Menambah kolom |
-| ALTER TABLE  `name_table` DROP COLUMN `name_column` | Menghapus kolom |
-| ALTER TABLE  `name_table` RENAME COLUMN `name_column_old` TO `name_column_new`  | Mengubah Nama kolom |
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-SELECT = Perintah ini digunakan untuk mengambil data dalam basis data. Perintah ini umumnnya akan menyebutkan nama kolom yang 
-ingin diambil datanya  dan penggunaaan tanda * untuk mengambil seluruh data kolom dalam table. 
-
-2. FROM = Perintah ini biasa digunakan setelah perintah SELECT. Perintah ini akan merujuk pada table yang digunakan.
-3. WHERE = Jika data ingin kita ambil merupakan data yang spesifik, maka perintah ini digunakan untuk filter data atau mengambil 
-data yang lebih spesifik daripada sekedar mengambil data dalam satu kolom sekaligus
-4. INSERT INTO = Perintah ini digunakan untuk memasukan data ke dalam table
-5. UPDATE = Perintah ini digunakan untuk mengubah data yang ada. 
-6. DELETE = perintah ini digunakan untuk menghapus data 
-
-
-## 3. Data Definition Language
-## 4. Data Manipulation Language
-## 5. Aggregate Queries
-## 6. Data Constraints
-## 7. JOIN Queries
-## 8. Sub Queries
-## 9. Advanced SQL Functions
-## 10. Views
-## 11. Indexes
-## 12. Transactions
-## 13. Data Integrity and Security
-## 14. Stored Procedures and Functions
-## 15. Performance Optimization
-## 16. Advanced SQL Concepts
 
