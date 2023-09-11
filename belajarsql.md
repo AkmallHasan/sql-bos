@@ -37,7 +37,7 @@ Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data
 <div align="center">
   
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | CREATE DATABASE `name_database` | Membuat basis data  |
 | DROP DATABASE `name_database` | Menghapus basis data |
 
@@ -49,7 +49,7 @@ Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat t
 <div align="center">
   
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | CREATE TABLE `name_table` (`name_columnX` `typedata_columnX` `defaultvalue_columnX`) | Membuat table  |
 | DROP TABLE `name_table` | Menghapus table |
 | DESCRIBE  `name_table` | Melihat Struktur table |
@@ -64,7 +64,7 @@ Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data 
 <div align="center">
   
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | INSERT INTO `name_table` ( `name_column1`,`name_column2`, `name_column3`) VALUES (`ValuesColumn1`,`ValuesColumn2`,`ValuesColumn3`)| Memasukan data |
 | DELETE FROM `name_table` WHERE `spesific row with operation` | Menghapus data |
 | UPDATE `name_table` SET `spesific column with operation` WHERE `spesific row with operation`| Menambahkan data |
