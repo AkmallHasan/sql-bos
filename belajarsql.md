@@ -35,21 +35,25 @@ SQL memiliki banyak perintah yang digunakan untuk berinteraksi dengan basis data
 Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data nya terlebih dahulu. Untuk pembuatan basis data gunakan perintah CREATE beserta nama basis datanya dan jika ingin menghapus gunakan perintah DROP beserta nama basis datanya. Berikut perintah yang umum digunakan ketika menjalankan database pertama kali,
 
 <div align="center">
+  
 | Command | Description |
 | --- | --- |
 | CREATE DATABASE `name_database` | Membuat basis data  |
 | DROP DATABASE `name_database` | Menghapus basis data |
+
 </div>
 
 **2. Manipulasi Tabel dalam Basis Data**
 Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat terdiri dari satu atau beberapa RDBMS. Umumnya pembuatan tabel selalu disesuaikan dengan tujuan penggunaan aplikasi basis data tersebut. Untuk membuat tabel gunakan perintah CREATE TABLE dan DROP TABLE jika ingin menghapus. Tujuan dari pembuatan tabel yaitu untuk tempat susunan data sesuai dengan kolom dan baris yang tersedia. Karena tujuannya lebih spesifik menjadikan terdapat berbagai perintah untuk memanipulasi data tabel. Barikut perintah yang umum digunakan ketika manipulasi data tabel.
 
 <div align="center">
+  
 | Command | Description |
 | --- | --- |
 | CREATE TABLE `name_table` (`name_columnX` `typedata_columnX` `defaultvalue_columnX`) | Membuat table  |
 | DROP TABLE `name_table` | Menghapus table |
 | DESCRIBE  `name_table` | Melihat Struktur table |
+
 </div>
 
 **3. Memasukan Data ke dalam Tabel** 
@@ -57,11 +61,13 @@ Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data 
 
 Apabila sewaktu-waktu terjadi penambahan data terhadap tabel yang pernah dibuat gunakan perintah UPDATE untuk menambahkan data baru tersebut. Berikut perintah-perintah yang digunakan dalam memanipulasi data,
 
+<div align="center">
+  
 | Command | Description |
 | --- | --- |
 | INSERT INTO `name_table` ( `name_column1`,`name_column2`, `name_column3`) VALUES (`ValuesColumn1`,`ValuesColumn2`,`ValuesColumn3`)| Memasukan data |
 
-
+</div>
 
 | DROP TABLE `name_table` | Menghapus table |
 | DESCRIBE  `name_table` | Melihat Struktur table |
