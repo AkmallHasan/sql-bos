@@ -74,7 +74,6 @@ Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data 
 | DELETE FROM `name_table` WHERE `spesific row with operation` | Menghapus data |
 | UPDATE `name_table` SET `spesific column with operation` WHERE `spesific row with operation`| Menambahkan data |
 
-
 </div>
 
 ### 2. Tipe Data
