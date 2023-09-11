@@ -79,20 +79,39 @@ Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data 
 ## 2. Tipe Data
 Tipe Data dalam SQL ada banyak sekali, berikut adalah tipe data yang umum digunakan, antara lain:
 
-1. Tipe Data Character
+### 1. Tipe Data Character
 
-Tipe data ini biasa disimpan dalam bentuk text, number dan symbol. 
+Tipe data ini biasa disimpan dalam bentuk text, number dan symbol. Tipe data ini terdiri dari 3 jenis yaitu char, varchar dan text. 
+- char**, tidak peduli seberapa banyak data yang disimpan hanyalah storage dengan nilai awal. digunakan pada data yang sudah pasti panjang datanya
+- **varchar**, penyimpanan bergantung pada banyak atau sedikitnya data yang dimasukan. lebih banyak digunakan karena optimal dalam pengguaan data yang sedikit
+- **text**, memiliki panjang data yang tidak terbatas. Jarang digunakan karena tipe data ini terlalu besar untuk digunakan, hanya pada keadaan tertentu saja. 
 
-2. Tipe Data Numeric
+### 2. Tipe Data Numeric
 
-3. Tipe Data Datetime
+Tipe data ini secara garis besar terdiri atas dua jenis yaitu,
+- **Intergers**, yaitu tipe data untuk bilangan bulat termasuk bilangan positive dan negative.
+- **Fixed-Point & Floating Point**, yaitu tipe data untuk nilai pecahan (desimal). Fixed Point menggunakan jumlah digit desimalnya tetap sehingga presisi dapat dikontrol dan biasa digunakan untuk perhitungan keuangan. contohnya tipe Desimal dan Numeric . Sedangkan pada Floating Point jumlah digit desimalnya mengikuti standar IEEE 754 ang mendefinisikan format untuk merepresentasikan angka dalam bentuk mantissa (fraksional) dan eksponen (pangkat 10). Floating-point dapat mewakili kisaran nilai yang sangat besar atau sangat kecil, yang sering digunakan dalam perhitungan ilmiah dan teknik. contohnya Real dan Double Precision.
 
-4. Tipe Data Boolean
+### 3. Tipe Data Datetime
 
-5. Tipe Data ENUM
+Tipe data datetime digunakan untuk melakukan pengolahan data tanggal. beberapa jenis tipe data datetime,
+- **timestamp** digunakan untuk mengolah data tanggal beserta waktu jam.
+- **date** digunakan untuk data tanggal
+- **time** digunakan untuk data waktu jam
+- **interval** digunakan sebagai selisih antar periode waktu tertentu
+
+### 4. Tipe Data Boolean
+
+Tipe data Boolean adalah tipe data kebenaran karena hanya berisi dua hasil TRUE atau FALSE
+
+### 5. Tipe Data ENUM
+
+Tipe data ENUM adalah tipe data yang digunakan untuk memilih satu opsi dari beberapa opsi yang telah dibuat/ditentukan. 
 
 
 ## 3. Operators
+
+
 
 
 ### 4. Statements
