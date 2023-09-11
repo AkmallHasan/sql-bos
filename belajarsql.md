@@ -1,8 +1,8 @@
 # Roadmap Belajar SQL 
 
-## 1. Introduction
+# 1. Introduction
 
-### Pengertian Basis Data Relasional 
+## Pengertian Basis Data Relasional 
 Basis data relasional adalah basis data yang menyimpan dan menyusun data secara terstruktur, sehingga memungkinkan suatu data 
 diproses berdasarkan hubungannya antar data dalam suatu table. Data disimpan didalam masing-masing table yang ada dalam database 
 dan dibuat unique berdasarkan unique tiap baris dalam table. Dalam setiap table terdiri atas masing-masing kolom yang menunjukan 
@@ -13,7 +13,7 @@ berhubungan. basis data relasional menggunakan key untuk membuat link antar tabl
 - primary key : nilai unique untuk mengidentikasi data per baris dalam tabel
 - foreign key : suatu kolom atau kombinasi kolom yang digunakan untuk membuat atau memaksa 2 tabel atau lebih menjadi terhubung.
 
-### Kelebihan dan Kekurangan RDBMS
+## Kelebihan dan Kekurangan RDBMS
 Kelebihan
 + Data menjadi tersturktur, RDBMS menjadikan data terstuktur menurut baris dan kolom sehingga effisien dan fleksible digunakan
 + Fitur ACID, RDBMS dapat diandalkan untuk tujuan aplikasi khusus
@@ -28,12 +28,12 @@ Kekurangan
 - Fixed Schema, semakin banyak skema yang digunakanakan semakin sulit dan memakan waktu untuk pengolahan
 - Tidak cocok digunakan untuk data yang tidak terstruktur
 
-## 2. Basic SQL Syntax
+# 2. Basic SQL Syntax
 SQL memiliki banyak perintah yang digunakan untuk berinteraksi dengan basis data yang digunakan, antara lain :
 
-### 1. SQL Keywords
+## 1. SQL Keywords
 
-**1. Membuat dan Menghapus Basis Data**
+### **A. Membuat dan Menghapus Basis Data**
 
 Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data nya terlebih dahulu. Untuk pembuatan basis data gunakan perintah CREATE beserta nama basis datanya dan jika ingin menghapus gunakan perintah DROP beserta nama basis datanya. Berikut perintah yang umum digunakan ketika menjalankan database pertama kali,
 
@@ -46,7 +46,7 @@ Hal yang pertama dilakukan dalam pengolahan basis data adalah membuat basis data
 
 </div>
 
-**2. Manipulasi Tabel dalam Basis Data**
+### **B. Manipulasi Tabel dalam Basis Data**
 
 Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat terdiri dari satu atau beberapa RDBMS. Umumnya pembuatan tabel selalu disesuaikan dengan tujuan penggunaan aplikasi basis data tersebut. Untuk membuat tabel gunakan perintah CREATE TABLE dan DROP TABLE jika ingin menghapus. Tujuan dari pembuatan tabel yaitu untuk tempat susunan data sesuai dengan kolom dan baris yang tersedia. Karena tujuannya lebih spesifik menjadikan terdapat berbagai perintah untuk memanipulasi data tabel. Barikut perintah yang umum digunakan ketika manipulasi data tabel.
 
@@ -62,7 +62,7 @@ Setelah Basis Data dibuat, selanjutnya membuat table. Dalam sebuah RDBMS dapat t
 
 </div>
 
-**3. Memasukan Data ke dalam Tabel** 
+### **C. Memasukan Data ke dalam Tabel** 
 
 Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data ke dalam masing-masing kolom pada tabel. Perlu diketahui bahwa kita tidak dapat memasukan data tanpa membuat tabel terlebih dahulu. Untuk memasukan data gunakan perintah INSERT, apabila terjadi kesalahan maka tidak perlu menghapus tabel, cukup hapus data yang salah dengan menggunakan perintah DELETE. Jika kolom dalam suatu tabel tidak disebutkan saat pengisian data dalam tabel, maka kolom tersebut tidak akan terisi dan secara otomatis akan bernilai `NULL Values` kecuali pada kolom tersebut tersedia default value. Apabila sewaktu-waktu terjadi penambahan data terhadap tabel yang pernah dibuat gunakan perintah UPDATE untuk menambahkan data baru tersebut. Berikut perintah-perintah yang digunakan dalam memanipulasi data,
 
@@ -76,10 +76,12 @@ Setelah database beserta kolom berhasil dibuat, selanjutnya kita memasukan data 
 
 </div>
 
-### 2. Tipe Data
+## 2. Tipe Data
 Tipe Data dalam SQL ada banyak sekali, berikut adalah tipe data yang umum digunakan, antara lain:
 
 1. Tipe Data Character
+
+Tipe data ini biasa disimpan dalam bentuk text, number dan symbol. 
 
 2. Tipe Data Numeric
 
@@ -90,7 +92,7 @@ Tipe Data dalam SQL ada banyak sekali, berikut adalah tipe data yang umum diguna
 5. Tipe Data ENUM
 
 
-### 3. Operators
+## 3. Operators
 
 
 ### 4. Statements
