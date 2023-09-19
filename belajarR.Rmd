@@ -1,0 +1,145 @@
+---
+title: "belajarR"
+author: "Akmal Hasan"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+kenapa furniture tidak profitable ?
+
+
+membaca dataset
+```{r}
+retail <- read.csv('data_input/retail.csv',stringsAsFactors = TRUE)
+```
+
+melihat cuplikan data
+```{r}
+head(retail, n=3)
+```
+
+Cek struktur data
+```{r}
+str(retail)
+```
+beberapa data perlu diubah :
+- row, quantity                                     = tetap int
+- order.ID, customer.Id, Product.Id, Product.Name   = ubah ke character
+- Order.Date, Ship.Date                             = ubah ke date
+- Ship.Mode, Segment, Category, Sub.Category        = tetap factor
+- sales,discount dan profit                         = tetap num
+
+```{r}
+retail$Order.ID <- as.character(retail$Order.ID)
+retail$Customer.ID <- as.character(retail$Customer.ID)
+retail$Product.ID <- as.character(retail$Product.ID)
+retail$Product.Name <- as.character(retail$Product.Name)
+
+```
+
+
+```{r}
+retail$Quantity <- as.numeric(retail$Quantity)
+```
+
+
+
+
+```{r}
+retail$Order.Date <- as.Date(retail$Order.Date, format= '%m/%d/%y')
+retail$Ship.Date <- as.Date(retail$Ship.Date, format= '%m/%d/%y')
+
+```
+
+```{r}
+head(retail$Order.Date, n=3)
+```
+
+```{r}
+summary(retail)
+```
+
+cek mising value
+```{r}
+anyNA(retail)
+```
+mendapatkan informasi 
+
+```{r}
+urutdisc <- aggregate(x = Discount ~ Category, #formula digantikan X
+          data = retail,
+          FUN = sum)
+
+urutdisc2 <- order(urutdisc$Discount, decreasing = TRUE)
+urutdisc[urutdisc2,]
+```
+```{r}
+aggregate(x = Profit ~ Category, #formula digantikan X
+          data = retail,
+          FUN = sum)
+```
+
+```{r}
+table(retail$Category)
+```
+
+
+```{r}
+retail$Duration <- difftime(
+  time1 = retail$Ship.Date,
+  time2 = retail$Order.Date,
+  units = "days")
+head(retail)
+```
+```{r}
+table(retail$Duration)
+```
+
+```{r}
+aggregate(x = Discount ~ Category, #formula digantikan X
+          data = retail,
+          FUN = mean)
+```
+```{r}
+aggregate(x = Profit ~ Category, #formula digantikan X
+          data = retail,
+          FUN = mean)
+```
+```{r}
+aggregate(x = Quantity ~ Category, #formula digantikan X
+          data = retail,
+          FUN = sum)
+```
+
+
+```{r}
+unique(retail$Discount)
+length(unique(retail$Discount))
+```
+```{r}
+aggregate(x= Profit ~ Discount, 
+          data = retail,
+          FUN = sum)
+```
+insight : - discount yang diatas 30% persen akan menghasilkan profit negatif
+
+```{r}
+loss <-  retail[retail$Profit < 0, ]
+loss
+```
+```{r}
+aggregate( x = Profit ~ Discount,
+           data = loss,
+           FUN = sum
+           )
+```
+```{r}
+aggregate(x = Profit ~ Ship.Mode,
+          data = loss,
+          FUN = sum)
+```
+insight : - kebanyakan data transaksi furniture menggunakan standard class. pengiriman dengan standard class menyebabkan perusahaan menanggung biaya pengiriman
+
